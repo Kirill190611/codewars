@@ -12,13 +12,5 @@
 //Solution:
 function testEven(n) {
     //Your awesome code here!
-    if (n === 0) {
-        return true;
-    } else if (n < Math.ceil(n)) {
-        return false;
-    } else if (n % 2 === 0) {
-        return true;
-    } else {
-        return false;
-    }
+    return n % 2 === 0;
 }
