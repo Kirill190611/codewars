@@ -27,7 +27,6 @@ function inAscOrder(arr) {
             } else {
                 arrIsAcc = true;
             }
-        }
-    }
+        }}
     return arrIsAcc;
 }
