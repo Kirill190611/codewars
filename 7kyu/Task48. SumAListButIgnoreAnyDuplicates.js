@@ -10,3 +10,5 @@ function sumNoDuplicates(numList) {
         .filter(el => numList.indexOf(el) === numList.lastIndexOf(el))
         .reduce((result, element) => result + element, 0)
 }
+
+//test
