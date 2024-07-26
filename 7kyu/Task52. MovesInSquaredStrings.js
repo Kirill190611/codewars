@@ -31,7 +31,7 @@
 // oper(hor_mirror, s) => "mnop\nijkl\nefgh\nabcd"
 // Note:
 // The form of the parameter fct in oper changes according to the language. You can see each form according to the language in "Sample Tests".
-//
+//-
 // Bash Note:
 // The input strings are separated by , instead of \n. The output strings should be separated by \r instead of \n. See "Sample Tests".
 
