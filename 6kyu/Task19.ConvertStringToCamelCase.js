@@ -10,7 +10,7 @@
 
 //Solution:
 const toCamelCase = (str) => {
-    return str.split(/_|-/)
+    return str.split(/[_\-]/)
         .map((word, index) => index === 0
             ? word
             : word.charAt(0).toUpperCase() + word.slice(1)
