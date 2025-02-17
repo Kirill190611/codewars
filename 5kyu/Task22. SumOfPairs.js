@@ -30,15 +30,15 @@
 
 //Solution:
 var sum_pairs=function(ints, s){
-    if (ints.length < 2) return undefined; //not enough numbers for pair.
+    if (ints.length < 2) return undefined;
     let intSet = new Set()
     intSet.add(ints[0]);
     for (let i=1; i < ints.length; ++i){
         let needed = s-ints[i];
-        if (intSet.has(needed)){//check if we have already seen the number needed to complete the pair.
+        if (intSet.has(needed)){
             return [needed,ints[i]];
         }
-        intSet.add(ints[i]);//if not insert the number in set and continue.
+        intSet.add(ints[i]);
     }
-    return undefined;//No answer found
+    return undefined;
 }
