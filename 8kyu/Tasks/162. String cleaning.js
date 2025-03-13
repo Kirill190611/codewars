@@ -7,4 +7,4 @@
 // Your harried co-workers are looking to you for a solution to take this garbled text and remove all of the numbers. Your program will take in a string and clean out all numeric characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
 
 //S:
-const stringClean = s => s.replace(/[0123456789]/g, '')
+const stringClean = s => s.replace(/[0-9]/g, '')
