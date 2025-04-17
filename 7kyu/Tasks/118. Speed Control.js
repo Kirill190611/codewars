@@ -18,4 +18,14 @@
 //  (3600 * delta_distance) / s.
 
 //Solution:
-const gps = (s, x) => Math.max(...x.slice(1).map((el, index) => ((el - x[index]) / s) * 3600)) | 0
+const gps1 = (s, x) => Math.max(...x.slice(1).map((el, index) => ((el - x[index]) / s) * 3600)) | 0
+const gps = (s, x) => {
+    if (x.length < 2) {
+        return 0
+    }
+    const result = []
+    for (let i = 0; i < x.length - 1; i++) {
+        result.push(3600 * (x[i + 1] - x[i]) / s)
+    }
+    return Math.max(...result)
+}
