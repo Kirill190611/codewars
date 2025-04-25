@@ -19,3 +19,13 @@
 // [ ]
 
 //Solution:
+const myLanguages = results => {
+    const SCORE = 60
+    const result = []
+    for (let el in results) {
+        if (results[el] >= SCORE) {
+            result.push(el)
+        }
+    }
+    return result.sort((a, b) => results[b] - results[a])
+}
