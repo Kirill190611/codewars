@@ -10,8 +10,8 @@
 
 //Solution:
 const vaporcode = string => string
+    .toUpperCase()
     .split(' ')
     .join('')
     .split('')
-    .map(el => el.toUpperCase())
     .join('  ')
