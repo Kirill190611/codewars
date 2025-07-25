@@ -36,7 +36,7 @@
 
 //Solution:
 const presses = phrase => {
-    var phrase1 = "1*# ADGJMPTW0BEHKNQUXCFILORVY23456S8Z79",
+    let phrase1 = "1*# ADGJMPTW0BEHKNQUXCFILORVY23456S8Z79",
         phrase2 = "111111111111222222222333333334444444455";
     return [...phrase.toUpperCase()].reduce((a, b)=>a+ + phrase2[phrase1.indexOf(b)], 0);
 }
