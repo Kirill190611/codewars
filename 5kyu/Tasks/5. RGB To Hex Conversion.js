@@ -25,7 +25,7 @@ const convertToRGB = rgbVal => {
     let secondHex= ((rgbVal / 16) - firstHex) * 16
     return getHexValue(firstHex) + getHexValue(secondHex)
 }
-const getHexValue = (digit) =>{
+const getHexValue = digit => {
     const rgbToHex = {
         '0': '0',
         '1': '1',
