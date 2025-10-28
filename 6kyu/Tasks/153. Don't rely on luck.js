@@ -10,5 +10,5 @@
 // Good luck!
 
 //Solution:
-var guess = 101;
+let guess = 101;
 Math.random = () => 1;
