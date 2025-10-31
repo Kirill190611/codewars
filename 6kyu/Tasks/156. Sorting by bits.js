@@ -24,7 +24,7 @@
 const sortByBit = arr => {
     const getResult = (el) =>
         el
-            .toString()
+            .toString(2)
             .padStart(32, '0')
             .split('')
             .filter((el) => el > 0).length;
